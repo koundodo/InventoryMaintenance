@@ -18,7 +18,13 @@ namespace InventoryMaintenance
         }
 
         // TODO: Declare here a private variable that can store a list of InvItem objects and intialize it to null.
+        private static List<Items> GetItems()
+        {
+            var items = new List<Items>
+            {
 
+            };
+        }
 
         private void frmInvMaint_Load(object sender, EventArgs e)
         {
