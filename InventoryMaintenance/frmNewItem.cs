@@ -12,6 +12,7 @@ namespace InventoryMaintenance
 {
     public partial class frmNewItem : Form
     {
+        //This constructor initializes main form and its control/definitions
         public frmNewItem()
         {
             InitializeComponent();
@@ -26,11 +27,13 @@ namespace InventoryMaintenance
         //       and then returns the new InvItem created by the user.
         // Hint: Use this.ShowDialog() to display the form.
 
+        //Dado Koundoul
              public InvItem GetNewItem()
              {
                this.ShowDialog();
                return invItem;
              }
+        //Dado Koundoul
             private bool IsValidData()
              {
             return Validator.IsPresent(txtItemNo) &&

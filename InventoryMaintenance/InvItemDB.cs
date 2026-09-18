@@ -8,7 +8,7 @@ namespace InventoryMaintenance
     public static class InvItemDB
     {
         private const string Path = @"InventoryItems.xml";
-
+        //Dado Koundoul
         public static List<InvItem> GetItems()
         {
             // create the list
@@ -44,6 +44,7 @@ namespace InventoryMaintenance
             return items;
         }
 
+        //Dado Koundoul
         public static void SaveItems(List<InvItem> items)
         {
             // create the XmlWriterSettings object

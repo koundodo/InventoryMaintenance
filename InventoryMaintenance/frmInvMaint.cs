@@ -12,6 +12,7 @@ namespace InventoryMaintenance
 {
     public partial class frmInvMaint : Form
     {
+        //This constructor initializes main form and its control/definitions
         public frmInvMaint()
         {
             InitializeComponent();
@@ -19,6 +20,7 @@ namespace InventoryMaintenance
 
         // TODO: Declare here a private variable that can store a list of InvItem objects and intialize it to null.
         private List<InvItem> invItems = null;
+
         private void frmInvMaint_Load(object sender, EventArgs e)
         {
             // TODO: Load the list of inventory items from the database class (InvItemDB).
@@ -29,6 +31,7 @@ namespace InventoryMaintenance
             FillItemListBox();
         }
 
+        //Dado Koundoul
         private void FillItemListBox()
         {
             lstItems.Items.Clear();
